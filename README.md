@@ -7,9 +7,15 @@ Generating Jwt token by authenticating username and password against details pre
   ![alt text](flow.png)
   
 ## Cockroach DB Secure Cluster Creation
+
+###### Cockroach DB Installation Steps:
+
+https://www.cockroachlabs.com/docs/v20.1/install-cockroachdb-windows#download-the-executable
+
   
 ######   Genarate certificate:
  
+ Open Command prompt/powershell and execute the below commands, 
   
     mkdir certs secure_cluster;
     cockroach cert create-ca --certs-dir=certs --ca-key=secure_cluster/ca.key;
