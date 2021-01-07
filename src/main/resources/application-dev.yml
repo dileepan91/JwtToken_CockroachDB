@@ -1,0 +1,13 @@
+server:
+  port: 8081
+app:
+  name: vaccineTracker
+  description: Vaccine Tracking Application
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:26257/tracker?ssl=true&sslmode=require&sslrootcert=src/main/resources/certs/ca.crt&sslkey=src/main/resources/certs/client.dbuser.key.pk8&sslcert=src/main/resources/certs/client.dbuser.crt
+    driver-class-name: org.postgresql.Driver
+    username: dbuser
+    hikari:
+      maximum-pool-size: 4
+      connection-init-sql: SELECT 1
